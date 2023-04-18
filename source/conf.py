@@ -22,7 +22,7 @@ exclude_patterns = []
 
 language = 'pt_BR'
 
-html_logo = 'images/aesop.png'
+html_logo = 'images/cidacs.png'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
