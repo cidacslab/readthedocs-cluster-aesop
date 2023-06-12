@@ -4,26 +4,26 @@ SLURM
 
 .. contents:: Conteudo
 
-Introducao
+Introdução
 ==========
 
-O gerenciador de filas utilizado no cluster e o `SLURM Workload Manager <https://slurm.schedmd.com/>`_. 
-Ele e um agendador de tarefas gratuito e de codigo aberto.
+O gerenciador de filas utilizado no cluster é o `SLURM Workload Manager <https://slurm.schedmd.com/>`_. 
+Ele é um agendador de tarefas gratuito e de código aberto.
 
-Comandos basicos
+Comandos básicos
 ================
-.. list-table:: Comandos basicos
+.. list-table:: Comandos básicos
     :align: center
     :header-rows: 1
 
     * - Comando
-      - Descricao
+      - Descrição
       - Exemplo
     * - ``sbatch``
       - Submite um job script
       - ``sbatch test.job``
     * - ``sinfo``
-      - Informa o estado das particoes e nos gerenciados pelo SLURM
+      - Informa o estado das partições e nos gerenciados pelo SLURM
       - ``sinfo``
     * - ``squeue``
       - Informa estado dos **jobs**
@@ -34,7 +34,7 @@ Comandos basicos
 
 SLURM Partitions
 ================
-As filas disponiveis no cluster estao mostradas abaixo.
+As filas disponíveis no cluster estão mostradas abaixo.
 
 .. code-block:: bash
   [user@login1 ~]$ sinfo
