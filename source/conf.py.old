@@ -8,19 +8,18 @@
 
 project = 'Cluster AESOP'
 copyright = '2023, AESOP'
-author = 'AESOP'
+author = 'Cidacs'
+
 release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = [ 'sphinx_rtd_theme' ]
+extensions = []
 
 templates_path = ['_templates']
 exclude_patterns = []
 
-master_doc = 'index'
-#root_doc = 'index'
 language = 'pt_BR'
 
 html_logo = 'images/cidacs.png'
