@@ -80,9 +80,9 @@ O comando abaixo lista os módulos disponiveis. É importante observar que os m�
   
   "module --default avail" or "ml -d av" to just list the default modules.
   "module overview" or "ml ov" to display the number of modules for each name.
-
-Use "module spider" to find all possible modules and extensions.
-Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
+  
+  Use "module spider" to find all possible modules and extensions.
+  Use "module keyword key1 key2 ..." to search for all possible modules matching any of the "keys".
 
 
 .. note::
