@@ -42,8 +42,8 @@ As filas disponíveis no cluster estão mostradas abaixo.
   PARTITION     AVAIL  TIMELIMIT  NODES  STATE NODELIST
   cpu              up   infinite      1   idle c002
   cpu_iterativo    up   infinite      1    mix c001
-  gpu              up   infinite      1  down* gpu1
-  gpu_iterativo    up   infinite      1  down* gpu1
+  gpu              up   infinite      1   idle gpu1
+  gpu_iterativo    up   infinite      1   idle gpu1
 
 
 Jobs
@@ -57,7 +57,8 @@ como parâmetros que descrevem solicitações de recursos e outras opções de s
 
 .. important::
 
-  As diretivas ``#BATCH`` devem aparecer no início do arquivo de submissão, antes de qualquer outra linha, exceto a primeira que deve ter o ``#!/bin/bash``.
+  As diretivas ``#BATCH`` devem aparecer no início do arquivo de submissão, antes de qualquer outra linha, exceto a primeira que deve ter o 
+  *shell* usado, normalmente, ``#!/bin/bash``.
 
 .. important::
 
