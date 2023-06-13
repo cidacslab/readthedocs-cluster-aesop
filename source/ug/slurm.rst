@@ -37,6 +37,7 @@ SLURM Partitions
 As filas disponíveis no cluster estão mostradas abaixo.
 
 .. code-block:: bash
+    
   [user@login1 ~]$ sinfo
   PARTITION     AVAIL  TIMELIMIT  NODES  STATE NODELIST
   cpu              up   infinite      1   idle c002
