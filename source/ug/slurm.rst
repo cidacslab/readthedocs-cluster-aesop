@@ -114,6 +114,8 @@ como parâmetros que descrevem solicitações de recursos e outras opções de s
 Exemplos de Scripts
 ===================
 
+Suponha o job abaixo com o nome de ``teste.job``.
+
 .. code-block:: bash
 
   #!/bin/bash
@@ -134,6 +136,16 @@ Exemplos de Scripts
   # executa o programa
   ./teste
 
-Ao terminar a execução deste job será gerado um arquivo com o nome, 
-por exemplo, ``teste-3125.out``. Onde a primeira parte do nome corresponde
+
+Para submeter o job acima basta digitar o comando abaixo. O número ``3125``
+corresponde ao *jobid* que identifica o job no SLURM.
+
+.. code-block:: bash
+
+  [user@login1 test]$ sbatch teste.job
+  Submitted batch job 3125
+
+Ao terminar a execução deste job será gerado um arquivo com o nome 
+``teste-3125.out``. Onde a primeira parte do nome corresponde
 ao *nome do job* e a segunda parte corresponde ao *jobid* do job.
+Ambos definidos no script.
