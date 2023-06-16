@@ -105,6 +105,8 @@ como parâmetros que descrevem solicitações de recursos e outras opções de s
       - nome do arquivo de saída do job
     * - ``-e``, ``--error``
       - nome do arquivo de saída pra os erros de execução do job
+    * - ``--time``
+      - define o tempo máximo de execução 
     * - ``--exclusive``
       - aloca o nó para uso exclusivo
 
@@ -112,3 +114,26 @@ como parâmetros que descrevem solicitações de recursos e outras opções de s
 Exemplos de Scripts
 ===================
 
+.. code-block:: bash
+
+  #!/bin/bash
+  #SBATCH --nodes=1
+  #SBATCH --ntasks=128
+  #SBATCH --partition=cpu
+  #SBATCH --job-name=teste
+  #SBATCH --output=%x-%j.out
+  #SBATCH --error=%x-%j.err
+  #SBATCH --time=12:00:00
+  
+  # entra no diretorio de submissao
+  cd $SLURM_SUBMIT_DIR 
+
+  # carrega o modules
+  module load gcc/12.2.0
+
+  # executa o programa
+  ./teste
+
+Ao terminar a execução deste job será gerado um arquivo com o nome, 
+por exemplo, ``teste-3125.out``. Onde a primeira parte do nome corresponde
+ao *nome do job* e a segunda parte corresponde ao *jobid* do job.
