@@ -34,7 +34,24 @@ Comandos básicos
 
 SLURM Partitions
 ================
-As filas disponíveis no cluster estão mostradas abaixo.
+Atualmente existem quatro filas filas disponíveis no cluster que são:
+
+.. list-table:: Filas
+    :align: center
+    :header-rows: 1
+
+    * - Fila
+      - Descrição
+    * - ``cpu``
+      - fila para jobs que utilizam apenas CPUs
+    * - ``cpu_iterativo``
+      - fila para sessão iterativa que utiliza, apenas CPUs
+    * - ``gpu``
+      - fila para jobs que utilizam GPUs
+    * - ``gpu_iterativo``
+      - fila para sessão iterativa que utiliza GPUs
+
+O comando abaixo mostra as filas.
 
 .. code-block:: bash
 
@@ -65,6 +82,31 @@ como parâmetros que descrevem solicitações de recursos e outras opções de s
   É importante ressaltar que todo o job executado através do sistema de fila, o resultado não será exibido na tela. Tudo o que o programa escrever
   será redirecionado para um arquivo que é definido pelo parametro ``--output``. No caso de omissão deste parâmetro, o arquivo de saída será o nome do 
   job mais o seu *jobid*, por exemplo, ``slurm-2732.out``. 
+
+.. list-table:: Principais parâmetros utilizados nos jobs
+    :align: center
+    :header-rows: 1
+
+    * - Parâmetro
+      - Função
+    * - ``-N``, ``--nodes``
+      - número de nós a ser alocados
+    * - ``-n``, ``--ntasks``
+      - número total de processos
+    * - ``-c``, ``--cpus-per-task``
+      - número de *threads*
+    * - ``--ntasks-per-node``
+      - número de processos por nó
+    * - ``-p``, ``--partition``
+      - seleciona a partição/fila para execução
+    * - ``-J``, ``--job-name``
+      - nome do job
+    * - ``-o``, ``--output``
+      - nome do arquivo de saída do job
+    * - ``-e``, ``--error``
+      - nome do arquivo de saída pra os erros de execução do job
+    * - ``--exclusive``
+      - aloca o nó para uso exclusivo
 
 
 Exemplos de Scripts
