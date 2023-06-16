@@ -111,6 +111,25 @@ como parâmetros que descrevem solicitações de recursos e outras opções de s
       - aloca o nó para uso exclusivo
 
 
+Variáveis de ambiente
+=====================
+
+.. list-table:: Principais variáveis de ambiente do SLURM
+    :align: center
+    :header-rows: 1
+
+    * - Variável
+      - Descrição
+    * - ``$SLURM_JOB_ID``
+      - número do *jobid*
+    * - ``$SLURM_SUBMIT_DIR``
+      - diretório onde o job foi submetido
+    * - ``$SLURM_JOB_NODELIST``
+      - lista de nós alocados para execução do job
+    * - ``$SLURM_NTASKS``, ``$SLURM_NPROCS``
+      - numero de processos
+
+
 Exemplos de Scripts
 ===================
 
