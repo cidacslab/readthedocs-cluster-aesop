@@ -147,5 +147,5 @@ corresponde ao *jobid* que identifica o job no SLURM.
 
 Ao terminar a execução deste job será gerado um arquivo com o nome 
 ``teste-3125.out``. Onde a primeira parte do nome corresponde
-ao *nome do job* e a segunda parte corresponde ao *jobid* do job.
-Ambos definidos no script.
+ao *nome do job* e a segunda parte corresponde ao *jobid* do job,
+ambos definidos no script.
