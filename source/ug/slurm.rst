@@ -20,8 +20,8 @@ Comandos básicos
       - Descrição
       - Exemplo
     * - ``sbatch``
-      - Submite um job script
-      - ``sbatch test.job``
+      - Submite um *job* script
+      - ``sbatch teste.job``
     * - ``sinfo``
       - Informa o estado das partições e nos gerenciados pelo SLURM
       - ``sinfo``
@@ -29,7 +29,7 @@ Comandos básicos
       - Informa estado dos **jobs**
       - ``squeue``
     * - ``scancel``
-      - Cancela um job pendente ou em execucao
+      - Cancela um *job* pendente ou em execucao
       - ``scancel 1234``
 
 SLURM Partitions
@@ -43,11 +43,11 @@ Atualmente existem quatro filas filas disponíveis no cluster que são:
     * - Fila
       - Descrição
     * - ``cpu``
-      - fila para jobs que utilizam apenas CPUs
+      - fila para *jobs* que utilizam apenas CPUs
     * - ``cpu_iterativo``
       - fila para sessão iterativa que utiliza, apenas CPUs
     * - ``gpu``
-      - fila para jobs que utilizam GPUs
+      - fila para *jobs* que utilizam GPUs
     * - ``gpu_iterativo``
       - fila para sessão iterativa que utiliza GPUs
 
@@ -65,7 +65,7 @@ O comando abaixo mostra as filas.
 
 Jobs
 ====
-Jobs são formados por uma ou várias etapas sequenciais, cada uma consistindo 
+*Jobs* são formados por uma ou várias etapas sequenciais, cada uma consistindo 
 de uma ou várias tarefas paralelas que serão encaminhados para os nós de processamento, de acordo com seus respectivos recursos, tais como: 
 CPUs, GPUs, memória, etc; que serão alocados pelo **SLURM**.
 
@@ -79,9 +79,9 @@ como parâmetros que descrevem solicitações de recursos e outras opções de s
 
 .. important::
 
-  É importante ressaltar que todo o job executado através do sistema de fila, o resultado não será exibido na tela. Tudo o que o programa escrever
+  É importante ressaltar que todo o *job* executado através do sistema de fila, o resultado não será exibido na tela. Tudo o que o programa escrever
   será redirecionado para um arquivo que é definido pelo parametro ``--output``. No caso de omissão deste parâmetro, o arquivo de saída será o nome do 
-  job mais o seu *jobid*, por exemplo, ``slurm-2732.out``. 
+  *job* mais o seu *job id*, por exemplo, ``slurm-2732.out``. 
 
 .. list-table:: Principais parâmetros utilizados nos jobs
     :align: center
@@ -100,15 +100,17 @@ como parâmetros que descrevem solicitações de recursos e outras opções de s
     * - ``-p``, ``--partition``
       - seleciona a partição/fila para execução
     * - ``-J``, ``--job-name``
-      - nome do job
+      - nome do *job*
     * - ``-o``, ``--output``
-      - nome do arquivo de saída do job
+      - nome do arquivo de saída do *job*
     * - ``-e``, ``--error``
-      - nome do arquivo de saída pra os erros de execução do job
-    * - ``--time``
-      - define o tempo máximo de execução 
+      - nome do arquivo de saída pra os erros de execução do *job*
+    * - ``-t``, ``--time``
+      - define o tempo máximo de execução
+    * - ``--mem``
+      - memória por nó necessária para execução do *job*
     * - ``--exclusive``
-      - aloca o nó para uso exclusivo
+      - aloca o(s) nó(s) para uso exclusivo
 
 
 Variáveis de ambiente
@@ -121,19 +123,19 @@ Variáveis de ambiente
     * - Variável
       - Descrição
     * - ``$SLURM_JOB_ID``
-      - número do *jobid*
+      - número do *job id*
     * - ``$SLURM_SUBMIT_DIR``
-      - diretório onde o job foi submetido
+      - diretório onde o *job* foi submetido
     * - ``$SLURM_JOB_NODELIST``
-      - lista de nós alocados para execução do job
+      - lista de nós alocados para execução do *job*
     * - ``$SLURM_NTASKS``, ``$SLURM_NPROCS``
-      - numero de processos
+      - número de processos
 
 
 Exemplos de Scripts
 ===================
 
-Suponha o job abaixo com o nome de ``teste.job``.
+Suponha o *job* abaixo com o nome de ``teste.job``.
 
 .. code-block:: bash
 
@@ -150,21 +152,21 @@ Suponha o job abaixo com o nome de ``teste.job``.
   cd $SLURM_SUBMIT_DIR 
 
   # carrega o modules
-  module load gcc/12.2.0
+  module load gcc/13.1.0
 
   # executa o programa
   ./teste
 
 
-Para submeter o job acima basta digitar o comando abaixo. O número ``3125``
-corresponde ao *jobid* que identifica o job no SLURM.
+Para submeter o *job* acima basta digitar o comando ``sbatch`` conforme mostrado abaixo. O número ``3125``
+corresponde ao *job id* que identifica o *job* no SLURM.
 
 .. code-block:: bash
 
   [user@login1 test]$ sbatch teste.job
   Submitted batch job 3125
 
-Ao terminar a execução deste job será gerado um arquivo com o nome 
+Ao terminar a execução deste *job* será gerado um arquivo com o nome 
 ``teste-3125.out``. Onde a primeira parte do nome corresponde
-ao *nome do job* e a segunda parte corresponde ao *jobid* do job,
+ao *nome do job* e a segunda parte corresponde ao *job id* do *job*,
 ambos definidos no script.
