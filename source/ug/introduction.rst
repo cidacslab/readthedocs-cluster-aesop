@@ -6,6 +6,8 @@ Introdução
 
 Introdução
 ==========
-O Cluster AESOP e possui nós computacionais para processamento com CPUs e com GPUs.
+O Cluster AESOP possui nós computacionais que permite atender processamento que demandam o 
+uso de CPUs e de GPUs.
 
-Segue a especificação de cada tipo de no de processamento.
+Segue uma breve especificação de hardware dos principais equipamentos que compõem o Cluster AESOP.
+
