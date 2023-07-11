@@ -46,31 +46,34 @@ O comando abaixo lista os módulos disponiveis. É importante observar que os m�
 .. code-block:: bash
 
   user@login1:~> module avail
-  
-  ------------------------------------------------------------ /usr/share/lmod/lmod/modulefiles ------------------------------------------------------------
-     Core/lmod    Core/settarg
 
-  ---------------------------------------------------------------- /opt/images/modulefiles -----------------------------------------------------------------
-     openmpi/4.1.2a1    openmpi/4.1.4      (D)    rstudio_singularity/3.6.2           rstudio_singularity/4.2.0 (D)
-     openmpi/4.1.3      python/3.6-jupyter        rstudio_singularity/4.2.0-custom    spark/3.2.2
+  ----------------------------------------------------------------- /usr/share/lmod/lmod/modulefiles -----------------------------------------------------------------
+  Core/lmod   Core/settarg (D)
 
-  --------------------------------------------------------- /usr/share/lmod/lmod/modulefiles/Core ----------------------------------------------------------
-     lmod    settarg
-  
-  ------------------------------------------------------- /opt/images/spack/share/lmod/gcc/12.2.0 ----------------------------------------------------------
-     autoconf/2.69-avy                         gettext/0.21.1-y2v              libjpeg-turbo/2.1.3-cxs    ncurses/6.3-kib       readline/8.1.2-nyx
-     automake/1.16.5-ypt                       hwloc/2.8.0-6da                 libpciaccess/0.16-wvs      numactl/2.0.14-2dm    tar/1.34-htd
-     berkeley-db/18.1.40-7qf                   jasper/2.0.32-5yg               libpng/1.6.37-woj          openmpi/4.1.4-uya     tcsh/6.24.00-sf5
-     bison/3.8.2-wvt                           jasper/3.0.3-dje         (D)    libsigsegv/2.13-zxg        openssh/9.1p1-wtz     time/1.9-ryh
-     bzip2/1.0.8-qfr                           krb5/1.19.3-fvw                 libtirpc/1.2.6-eue         openssl/1.1.1s-uqi    util-macros/1.19.3-zav
-     ca-certificates-mozilla/2022-10-11-rg2    libaec/1.0.6-al5                libtool/2.4.7-pj7          perl/5.36.0-bzc       xz/5.2.7-vow
-     cmake/3.24.3-kex                          libedit/3.1-20210216-2ox        libxml2/2.10.1-dba         pigz/2.7-mr6          zlib/1.2.13-lct
-     diffutils/3.8-5wz                         libevent/2.1.12-net             m4/1.4.19-ef4              pkgconf/1.8.0-qzo     zstd/1.5.2-2xw
-     gdbm/1.23-3ak                             libiconv/1.16-grt               nasm/2.15.05-qre           pmix/4.1.2-p7f
-  
-  ---------------------------------------------- /opt/images/spack/share/lmod/openmpi/4.1.4-uyavddi/gcc/12.2.0 ---------------------------------------------
-   hdf5/1.12.2-ahr       netcdf-fortran/4.6.0-cue      wps/4.3.1-dmpar    wps/4.3.1-nry           wrf/4.4-pbu      wrf/4.4-serial
-   netcdf-c/4.9.0-4b7    parallel-netcdf/1.12.3-lna    wps/4.3.1-jup      wps/4.3.1-serial (D)    wrf/4.4-dmpar    wrf/4.4-w3r    (D)
+  --------------------------------------------------------------------- /opt/images/modulefiles ----------------------------------------------------------------------
+  openmpi/4.1.2a1   openmpi/4.1.4         rstudio_singularity/3.6.2           rstudio_singularity/4.2.0 (D)
+  openmpi/4.1.3     python/3.6-jupyter    rstudio_singularity/4.2.0-custom    spark/3.2.2
+
+  ------------------------------------------------------------- /opt/images/spack/share/lmod/gcc/13.1.0 --------------------------------------------------------------
+  autoconf-archive/2023.02.20-46o     gdbm/1.23-4v5               libpciaccess/0.17-jny   ncurses/6.4-snx         tar/1.34-wbi
+  autoconf/2.69-az5                   gettext/0.21.1-m7u          libpng/1.6.39-65w       numactl/2.0.14-z2h      tcsh/6.24.00-b7s
+  automake/1.16.5-zs4                 gmake/4.4.1-6o6             libsigsegv/2.14-vwn     openmpi/4.1.5-t25 (D)   texinfo/7.0.3-abp
+  berkeley-db/18.1.40-tyl             gmp/6.2.1-6ca               libtirpc/1.2.6-7tq      openssh/9.2p1-u5p       time/1.9-6js
+  bison/3.8.2-blf                     hwloc/2.9.1-x76             libtool/2.4.7-5io       openssl/1.1.1t-mo3      util-macros/1.19.3-qom
+  bzip2/1.0.8-nfj                     jasper/2.0.32-xue           libxcrypt/4.4.33-bol    patch/2.7.6-26x         xz/5.4.1-bq5
+  c-blosc/1.21.2-rno                  krb5/1.20.1-oxy             libxml2/2.10.3-dqi      perl/5.36.0-56j         zlib/1.2.13-ixd
+  ca-certificates-mozilla/2023-csd    libaec/1.0.6-caj            lz4/1.9.4-nwv           pigz/2.7-f24            zstd/1.5.5-wys
+  cmake/3.26.3-26r                    libedit/3.1-20210216-ks5    m4/1.4.19-7um           pkgconf/1.9.5-t5y
+  diffutils/3.9-qeq                   libevent/2.1.12-fo4         mpc/1.3.1-s37           pmix/4.2.3-3qq
+  gawk/5.2.1-a6o                      libiconv/1.17-xzr           mpfr/4.2.0-qbu          readline/8.2-re5
+  gcc/13.1.0-z7b                      libjpeg-turbo/2.1.5-smy     nasm/2.15.05-upr        snappy/1.1.10-oil
+
+  -------------------------------------------------- /opt/images/spack/share/lmod/openmpi/4.1.5-t252iac/gcc/13.1.0 ---------------------------------------------------
+  hdf5/1.10.9-b4h       netcdf-fortran/4.6.0-ryp      wps/4.5-bt7       wrf/4.4.2-serial    wrf/4.4.2-2eg (D)
+  netcdf-c/4.9.2-adn    parallel-netcdf/1.12.3-6iz    wrf/4.4.2-dmpar   wrf/4.4.2-slp
+
+  -------------------------------------------------------------- /usr/share/lmod/lmod/modulefiles/Core ---------------------------------------------------------------
+  lmod    settarg (D)
 
     Where:
      D:  Default Module
@@ -87,7 +90,7 @@ O comando abaixo lista os módulos disponiveis. É importante observar que os m�
 .. note::
   
   Repare os diretórios dos modulefiles. Eles mostram a dependência entre os pacotes. Por exemplo, os modules abaixo do 
-  diretório ``/opt/images/spack/share/lmod/gcc/12.2.0`` são os pacotes que foram compilados usando o compilador ``gcc`` versão 12.2.0. 
+  diretório ``/opt/images/spack/share/lmod/gcc/13.1.0`` são os pacotes que foram compilados usando o compilador ``gcc`` versão 12.2.0. 
   O mesmo acontece em outros diretórios. Recomenda-se que utilize o mesmo compilador, no caso de dependência de pacotes, 
   para evitar problemas de incompatibilidade.
 
@@ -102,26 +105,26 @@ Obtendo informações sobre os módulos
 
   user@login1:~> module help gcc
 
------------------------- Module Specific Help for "gcc/12.2.0-vuo3f" ------------------------------------
+------------------------ Module Specific Help for "gcc/13.1.0-z7b" ------------------------------------
 The GNU Compiler Collection includes front ends for C, C++, Objective-C,
 Fortran, Ada, and Go, as well as libraries for these languages.
 
 .. code-block:: bash
 
   user@login1:~> module whatis gcc
-  gcc/12.2.0-vuo3f : The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, and Go, as well as libraries for these languages.
+  gcc/13.1.0-z7b : The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, and Go, as well as libraries for these languages.
 
 Carregando, listando e descarregando um módulo.
 
 .. code-block:: bash
 
-  [user@login1:~]$ module load gcc/12.2.0-vuo3f
+  [user@login1:~]$ module load gcc/13.1.0-z7b
   [user@login1 ~]$ module list
   
   Currently Loaded Modules:
-    1) gcc/12.2.0-vuo3f
+    1) gcc/13.1.0-z7b
 
-  [user@login1 ~]$ module unload gcc/12.2.0-vuo3f
+  [user@login1 ~]$ module unload gcc/13.1.0-z7b
   [user@login1 ~]$ module list
   No modules loaded
 
@@ -135,11 +138,13 @@ Os módulos, de forma geral, carregam automaticamente os **module** de todas as 
 
  [user1@login1:~]$ module list
  No Modulefiles Currently Loaded.
- [user1@login1:~]$ module load netcdf-c/4.9.0-4b7
+
+ [user1@login1:~]$  module load netcdf-c/4.9.2-adn
  [user1@login1 ~]$ module list
-  
-  Currently Loaded Modules:
-    1) libaec/1.0.6-al5        5) zlib/1.2.13-lct      9) numactl/2.0.14-2dm  13) tar/1.34-htd        17) libedit/3.1-20210216-2ox  21) openmpi/4.1.4-uya
-    2) libpciaccess/0.16-wvs   6) libxml2/2.10.1-dba  10) bzip2/1.0.8-qfr     14) gettext/0.21.1-y2v  18) openssh/9.1p1-wtz         22) pkgconf/1.8.0-qzo
-    3) libiconv/1.16-grt       7) ncurses/6.3-kib     11) pigz/2.7-mr6        15) openssl/1.1.1s-uqi  19) libevent/2.1.12-net       23) hdf5/1.12.2-ahr
-    4) xz/5.2.7-vow            8) hwloc/2.8.0-6da     12) zstd/1.5.2-2xw      16) krb5/1.19.3-fvw     20) pmix/4.1.2-p7f            24) netcdf-c/4.9.0-4b7
+
+ Currently Loaded Modules:
+   1) bzip2/1.0.8-nfj     6) c-blosc/1.21.2-rno     11) libxml2/2.10.3-dqi  16) tar/1.34-wbi              21) libxcrypt/4.4.33-bol  26) pkgconf/1.9.5-t5y
+   2) lz4/1.9.4-nwv       7) libaec/1.0.6-caj       12) ncurses/6.4-snx     17) gettext/0.21.1-m7u        22) openssh/9.2p1-u5p     27) hdf5/1.10.9-b4h
+   3) snappy/1.1.10-oil   8) libpciaccess/0.17-jny  13) hwloc/2.9.1-x76     18) openssl/1.1.1t-mo3        23) libevent/2.1.12-fo4   28) netcdf-c/4.9.2-adn
+   4) zlib/1.2.13-ixd     9) libiconv/1.17-xzr      14) numactl/2.0.14-z2h  19) krb5/1.20.1-oxy           24) pmix/4.2.3-3qq
+   5) zstd/1.5.5-wys     10) xz/5.4.1-bq5           15) pigz/2.7-f24        20) libedit/3.1-20210216-ks5  25) openmpi/4.1.5-t25
