@@ -41,7 +41,10 @@ Nenhum módulo é carregado por padrão.
    user@login1:~> module list
    No Modulefiles Currently Loaded.
 
-O comando abaixo lista os módulos disponiveis. É importante observar que os módulos são separados por grupos. Deve-se ter o cuidado de utiliza-lo de forma correta. Por exemplo, os modulos abaixo do ``/sw/apps/pgi16/modulefiles`` devem ser utilizado junto com o compilador PGI. Outro exemplo, uma das implementações do padrão MPI é feita através do ``mvapich`` e este por sua vez tem 3 versões diferentes, uma para cada compilador (PGI, Intel e GNU).
+O comando abaixo lista os módulos disponiveis. É importante observar que os módulos são separados por 
+grupos. Deve-se ter o cuidado de utiliza-lo de forma correta. Por exemplo, os modulos abaixo do 
+``/opt/images/spack/share/lmod/gcc/13.1.0`` devem ser utilizado junto com o compilador GCC. Outro exemplo, uma das 
+implementações do padrão MPI é feita através do ``openmpi``.
 
 .. code-block:: bash
 
@@ -89,14 +92,11 @@ O comando abaixo lista os módulos disponiveis. É importante observar que os m�
 
 .. note::
   
-  Repare os diretórios dos modulefiles. Eles mostram a dependência entre os pacotes. Por exemplo, os modules abaixo do 
-  diretório ``/opt/images/spack/share/lmod/gcc/13.1.0`` são os pacotes que foram compilados usando o compilador ``gcc`` versão 12.2.0. 
-  O mesmo acontece em outros diretórios. Recomenda-se que utilize o mesmo compilador, no caso de dependência de pacotes, 
-  para evitar problemas de incompatibilidade.
-
-.. warning::
-
-  Os modules (incluindo as versões) utilizados para compilar **devem ser os mesmos** a serem incluidos no script de submissão do job.
+  Repare os diretórios dos modulefiles. Eles mostram a dependência entre os pacotes. Por exemplo, os 
+  modules abaixo do diretório ``/opt/images/spack/share/lmod/gcc/13.1.0`` são os pacotes que foram 
+  compilados usando o compilador ``gcc`` versão 13.1.0. 
+  O mesmo acontece em outros diretórios. Recomenda-se que utilize o mesmo compilador, no caso de 
+  no script de submissão do job.
 
 Obtendo informações sobre os módulos
 ------------------------------------
