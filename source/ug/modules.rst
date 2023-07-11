@@ -43,21 +43,21 @@ Nenhum módulo é carregado por padrão.
 
 O comando abaixo lista os módulos disponiveis. É importante observar que os módulos são separados por 
 grupos. Deve-se ter o cuidado de utiliza-lo de forma correta. Por exemplo, os modulos abaixo do 
-``/opt/images/spack/share/lmod/gcc/13.1.0`` devem ser utilizado junto com o compilador GCC. Outro exemplo, uma das 
+``/opt/images/spack/share/lmod/gcc/13.1.0`` devem ser utilizado junto com o compilador GCC versão 13.1.0. Outro exemplo, uma das 
 implementações do padrão MPI é feita através do ``openmpi``.
 
 .. code-block:: bash
 
   user@login1:~> module avail
 
-  ----------------------------------------------------------------- /usr/share/lmod/lmod/modulefiles -----------------------------------------------------------------
+  ------------------------------------------------------- /usr/share/lmod/lmod/modulefiles -------------------------------------------------------
   Core/lmod   Core/settarg (D)
 
-  --------------------------------------------------------------------- /opt/images/modulefiles ----------------------------------------------------------------------
+  ----------------------------------------------------- /opt/images/modulefiles --------------------------------------------------------
   openmpi/4.1.2a1   openmpi/4.1.4         rstudio_singularity/3.6.2           rstudio_singularity/4.2.0 (D)
   openmpi/4.1.3     python/3.6-jupyter    rstudio_singularity/4.2.0-custom    spark/3.2.2
 
-  ------------------------------------------------------------- /opt/images/spack/share/lmod/gcc/13.1.0 --------------------------------------------------------------
+  --------------------------------------------- /opt/images/spack/share/lmod/gcc/13.1.0 ------------------------------------------------
   autoconf-archive/2023.02.20-46o     gdbm/1.23-4v5               libpciaccess/0.17-jny   ncurses/6.4-snx         tar/1.34-wbi
   autoconf/2.69-az5                   gettext/0.21.1-m7u          libpng/1.6.39-65w       numactl/2.0.14-z2h      tcsh/6.24.00-b7s
   automake/1.16.5-zs4                 gmake/4.4.1-6o6             libsigsegv/2.14-vwn     openmpi/4.1.5-t25 (D)   texinfo/7.0.3-abp
@@ -71,11 +71,11 @@ implementações do padrão MPI é feita através do ``openmpi``.
   gawk/5.2.1-a6o                      libiconv/1.17-xzr           mpfr/4.2.0-qbu          readline/8.2-re5
   gcc/13.1.0-z7b                      libjpeg-turbo/2.1.5-smy     nasm/2.15.05-upr        snappy/1.1.10-oil
 
-  -------------------------------------------------- /opt/images/spack/share/lmod/openmpi/4.1.5-t252iac/gcc/13.1.0 ---------------------------------------------------
+  ---------------------------------- /opt/images/spack/share/lmod/openmpi/4.1.5-t252iac/gcc/13.1.0 -------------------------------------
   hdf5/1.10.9-b4h       netcdf-fortran/4.6.0-ryp      wps/4.5-bt7       wrf/4.4.2-serial    wrf/4.4.2-2eg (D)
   netcdf-c/4.9.2-adn    parallel-netcdf/1.12.3-6iz    wrf/4.4.2-dmpar   wrf/4.4.2-slp
 
-  -------------------------------------------------------------- /usr/share/lmod/lmod/modulefiles/Core ---------------------------------------------------------------
+  ---------------------------------------------- /usr/share/lmod/lmod/modulefiles/Core -------------------------------------------------
   lmod    settarg (D)
 
     Where:
@@ -105,14 +105,15 @@ Obtendo informações sobre os módulos
 
   user@login1:~> module help gcc
 
------------------------- Module Specific Help for "gcc/13.1.0-z7b" ------------------------------------
+-------------- Module Specific Help for "gcc/13.1.0-z7b" --------------------------
 The GNU Compiler Collection includes front ends for C, C++, Objective-C,
 Fortran, Ada, and Go, as well as libraries for these languages.
 
 .. code-block:: bash
 
   user@login1:~> module whatis gcc
-  gcc/13.1.0-z7b : The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, Ada, and Go, as well as libraries for these languages.
+  gcc/13.1.0-z7b : The GNU Compiler Collection includes front ends for C, C++, Objective-C, Fortran, 
+  Ada, and Go, as well as libraries for these languages.
 
 Carregando, listando e descarregando um módulo.
 
@@ -132,7 +133,8 @@ Carregando, listando e descarregando um módulo.
 Dependências
 ------------
 
-Os módulos, de forma geral, carregam automaticamente os **module** de todas as dependências, **excluindo** o compilador.
+Os módulos, de forma geral, carregam automaticamente os **module** de todas as dependências, 
+**excluindo** o compilador.
 
 .. code-block:: bash
 
