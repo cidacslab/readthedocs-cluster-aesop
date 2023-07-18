@@ -4,11 +4,11 @@ Introdução
 
 .. contents:: Conteúdo
 
-.. Aviso::
+.. Warning::
    Esta documentação é um trabalho contínuo e algumas seções podem estar incompletas. Entretanto, 
    a equipe de suporte do AESOP está à disposição para esclarecer eventuais dúvidas dos usuários.
 
-.. Nota::
+.. Note::
     **AESOP - Sistema de Alerta Precoce para Surtos com Potencial Epi-Pandêmico**
 
     A iniciativa tem o apoio do Ministério da Saúde (MS), da Fundação Rockefeller e da Fiocruz. 

@@ -21,7 +21,8 @@ exclude_patterns = []
 
 master_doc = 'index'
 #root_doc = 'index'
-language = 'pt_BR'
+#language = 'pt_BR'
+language = 'en_US'
 
 html_logo = 'images/cidacs.png'
 
