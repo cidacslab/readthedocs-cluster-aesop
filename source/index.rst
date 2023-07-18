@@ -9,15 +9,15 @@ Cluster AESOP - Guia do Usuario
 .. toctree::
     :maxdepth: 2
     :numbered:
-    :caption: Conteudo:
+    :caption: Conteúdo:
 
     ug/introduction.rst
     ug/modules.rst
     ug/slurm.rst
     ug/ondemand.rst
 
-Indices and tables
-==================
+Indices and tabelas
+===================
 
 * :ref:`genindex`
 * :ref:`modindex`
