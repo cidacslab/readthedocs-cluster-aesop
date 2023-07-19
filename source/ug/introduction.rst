@@ -48,7 +48,7 @@ FAT Node
       - 4 TB 
     * - Rede
       - 25 GbE
-    * - Local scratch
+    * - Scratch (Local)
       - 28 TB
 
 .. image:: ../images/fat-node1.png
@@ -79,7 +79,7 @@ GPU Node
       - NVIDIA HGX A100 4-GPU 40GB
     * - Rede
       - 25 GbE
-    * - Local scratch
+    * - Scratch (Local)
       - 28 TB
 
 .. image:: ../images/gpu-node.png
