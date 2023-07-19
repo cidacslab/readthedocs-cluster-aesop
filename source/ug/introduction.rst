@@ -97,7 +97,7 @@ Storage Node
     * - Model
       - Storage SuperServer SSG-640P-E1CR24H 
     * - Processador
-      - Intel(R) Xeon(R) Silver 4310
+      - Intel Xeon Silver 4310 (12 cores/socket)
     * - Cores/Node
       - 12
     * - Threads/core
