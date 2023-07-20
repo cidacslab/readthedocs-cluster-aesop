@@ -74,7 +74,7 @@ como parâmetros que descrevem solicitações de recursos e outras opções de s
 
 .. important::
 
-  As diretivas ``#BATCH`` devem aparecer no início do arquivo de submissão, antes de qualquer outra linha, exceto a primeira que deve ter o 
+  As diretivas ``#SBATCH`` devem aparecer no início do arquivo de submissão, antes de qualquer outra linha, exceto a primeira que deve ter o 
   *shell* usado, normalmente, ``#!/bin/bash``.
 
 .. important::
