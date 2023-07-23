@@ -22,13 +22,18 @@ Introdução
 
 Introdução
 ==========
-Para facilitar o desenvolvimento do projeto AESOP utiliza-se um Cluster que possui nós computacionais 
-que permite atender tanto a demanda de processamento com CPUs e GPUs.
+
+O cluster AEOSOP é composto por servidores que possuem várias funcionalidades, tais como:
+  * gerenciamento: gerencia e administra o cluster
+  * serviços: diversos serviços oferecido ao cluster, por exemplo, nó de *login*
+  * armazenamento: área em disco compartilhado pelo cluster
+  * nós de processamento (CPU): nós de processamento de aplicações seriais e paralelas que demandam uso de CPUs
+  * nós de processamento (GPU): nós de processamento de aplicações que demandam uso de GPUs
 
 Segue uma breve especificação de hardware dos principais equipamentos que compõem o Cluster AESOP.
 
-FAT Node
---------
+FAT Node (CPU)
+--------------
 
 .. list-table:: FAT Node (2 nodes)
     :align: center
